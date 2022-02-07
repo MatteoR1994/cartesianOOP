@@ -1,4 +1,4 @@
-class Rectangle {
+class Rectangle { // Con 4 punti
 
     constructor(infSx, supSx, supDx, infDx) {
         this.infSx = infSx;
