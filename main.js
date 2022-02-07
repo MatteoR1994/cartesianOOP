@@ -62,7 +62,6 @@ const verticeInfDx = new Point(8, 2);
 const rectangle1 = new Rectangle(verticeInfSx, verticeSupSx, verticeSupDx, verticeInfDx);
 
 
-
 console.log(rectangle1.perimetro);
 
 console.log(rectangle1.area);
