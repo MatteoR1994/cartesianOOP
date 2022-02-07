@@ -56,10 +56,12 @@ console.log(segment1.mediumPoint);
 
 const verticeInfSx = new Point(3, 2);
 const verticeSupSx = new Point(3, 6);
-const verticeSupDx = new Point(8, 2);
-const verticeInfDx = new Point(8, 6);
+const verticeSupDx = new Point(8, 6);
+const verticeInfDx = new Point(8, 2);
 
 const rectangle1 = new Rectangle(verticeInfSx, verticeSupSx, verticeSupDx, verticeInfDx);
+
+
 
 console.log(rectangle1.perimetro);
 
