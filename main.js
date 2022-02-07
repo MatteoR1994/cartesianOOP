@@ -46,28 +46,47 @@
 
 /*****************************************************************************/
 
-const segment1 = new Segment(3, 5, 6, 1);
+// const segment1 = new Segment(3, 5, 6, 1);
 
-console.log(segment1.length);
+// console.log(segment1.length);
 
-console.log(segment1.mediumPoint);
+// console.log(segment1.mediumPoint);
 
-/*****************************************************************************/
+// /*****************************************************************************/
 
-const verticeInfSx = new Point(3, 2);
-const verticeSupSx = new Point(3, 6);
-const verticeSupDx = new Point(8, 6);
-const verticeInfDx = new Point(8, 2);
+// const verticeInfSx = new Point(3, 2);
+// const verticeSupSx = new Point(3, 6);
+// const verticeSupDx = new Point(8, 6);
+// const verticeInfDx = new Point(8, 2);
 
-const rectangle1 = new Rectangle(verticeInfSx, verticeSupSx, verticeSupDx, verticeInfDx);
+// const rectangle1 = new Rectangle(verticeInfSx, verticeSupSx, verticeSupDx, verticeInfDx);
 
 
-console.log(rectangle1.perimetro);
+// console.log(rectangle1.perimetro);
 
-console.log(rectangle1.area);
+// console.log(rectangle1.area);
 
 // h = 4
 
 // b = 5
 
 // p = 18 / a = 20
+
+/*****************************************************************************/
+
+const vec1 = new Vec(1, 2);
+const vec2 = new Vec(2, 3);
+const vec3 = new Vec(3, 4);
+
+console.log(vec1.plus(vec2));
+console.log(vec1.minus(vec2));
+console.log(vec3.length);
+
+
+let group = Group.from([10, 20, 40]);
+console.log(group);
+console.log(group.has(10));
+console.log(group.has(30));
+group.add(10);
+group.remove(10);
+console.log(group.has(10));
