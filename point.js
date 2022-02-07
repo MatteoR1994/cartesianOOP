@@ -12,7 +12,7 @@ class Point { // Punto cartesiano
 
     distanceFromOrigin(){
         const origin = new Point(0,0);
-        const distance = this.distanceFrom(origin, this);
+        const distance = this.distanceFrom(origin);
         return distance;
     }
 
