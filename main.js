@@ -74,19 +74,53 @@
 
 /*****************************************************************************/
 
-const vec1 = new Vec(1, 2);
-const vec2 = new Vec(2, 3);
-const vec3 = new Vec(3, 4);
+// const vec1 = new Vec(1, 2);
+// const vec2 = new Vec(2, 3);
+// const vec3 = new Vec(3, 4);
 
-console.log(vec1.plus(vec2));
-console.log(vec1.minus(vec2));
-console.log(vec3.length);
+// console.log(vec1.plus(vec2));
+// console.log(vec1.minus(vec2));
+// console.log(vec3.length);
 
 
-let group = Group.from([10, 20, 40]);
-console.log(group);
-console.log(group.has(10));
-console.log(group.has(30));
-group.add(10);
-group.remove(10);
-console.log(group.has(10));
+// let group = Group.from([10, 20, 40]);
+// console.log(group);
+// console.log(group.has(10));
+// console.log(group.has(30));
+// group.add(10);
+// group.remove(10);
+// console.log(group.has(10));
+
+/*****************************************************************************/
+
+const point1 = new Point(1, 1);
+const point2 = new Point(1, 5);
+const point3 = new Point(4, 1);
+
+const triangleClass = new Triangle(point1, point2, point3);
+
+console.log("Triangolo classe: ", triangleClass);
+console.log("Perimetro triangolo classe: ", triangleClass.perimeter);
+console.log("Area triangolo classe: ", triangleClass.area);
+
+const rightTriangleClass = new RightTriangle(point1, point2, point3);
+
+console.log("Triangolo rettangolo classe: ", rightTriangleClass);
+console.log("Perimetro triangolo rettangolo classe: ", rightTriangleClass.perimeter);
+console.log("Area triangolo rettangolo classe: ", rightTriangleClass.area);
+console.log("Ipotenusa triangolo rettangolo classe: ", rightTriangleClass.calculateHp());
+
+console.log("-------------------------------------------------------------------------");
+
+const trianglePrototype = new Tri(point1, point2, point3);
+
+console.log("Triangolo prototipo: ", trianglePrototype);
+console.log("Perimetro triangolo prototipo: ", trianglePrototype.perimeter());
+console.log("Area triangolo prototipo: ", trianglePrototype.area());
+
+const rightTrianglePrototype = new RightTri(point1, point2, point3);
+
+console.log("Triangolo rettangolo prototipo: ", rightTrianglePrototype);
+console.log("Perimetro triangolo rettangolo prototipo: ", rightTrianglePrototype.perimeter());
+console.log("Area triangolo rettangolo prototipo: ", rightTrianglePrototype.area());
+console.log("Ipotenusa triangolo rettangolo prototipo: ", rightTrianglePrototype.calculateHp());
